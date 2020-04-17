@@ -1,2 +1,2 @@
-include ':app'
+include ':app', ':libBioMini_v20'
 rootProject.name='Unity Schools Attendance'

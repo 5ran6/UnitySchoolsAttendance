@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_img"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="@dimen/spacing_xlarge"
+    tools:context=".Login">
+
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/img"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:src="@drawable/logo" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <androidx.appcompat.widget.AppCompatCheckedTextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="left"
+        android:text="Enter Admission Number" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/bippiis_no"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Admission Number"
+        android:imeOptions="actionDone"
+        android:inputType="textCapCharacters"
+
+        android:maxLength="25"
+        android:maxLines="1"
+        android:singleLine="true" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/tab_rounded_green"
+        android:onClick="proceed"
+        android:text="Check"
+        android:textColor="@color/white" />
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left"
+        android:fontFamily="@font/colfax_blackitalic"
+        android:text="Welcome, Imoter Nyor"
+        android:textSize="@dimen/spacing_large" />
+
+    <ProgressBar
+        android:id="@+id/progress"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -26,6 +26,9 @@
         <activity android:name=".Settings" />
         <activity android:name=".DialogAddReview" />
         <activity android:name=".Licenses" />
+        <activity android:name=".Login" />
+        <activity android:name=".CameraCapture" />
+        <activity android:name=".BioMiniMain" />
     </application>
 
 </manifest>
